@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="center">
+      <div class="todolistborder">
+        <div class="text">To-Do List</div>
+        <div class="text12">
+          <div class="text1">
+            <input
+              class="holder"
+              placeholder="Add a new task..."
+              size="48px;"
+              style="
+                border: solid 2px grey;
+                height: 50px;
+                width: 340px;
+                border-radius: 10px;
+                font-size: 20px;
+              "
+            />
+          </div>
+          <div class="text2">
+            <button
+              id="add-btn"
+              style="height: 57px; width: 80px; border-radius: 10px"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+        <div style="padding-left: 8px; padding-top: 15px">
+          <button class="all" style="height: 30px; width: 40px">All</button>
+          <button class="active" style="height: 30px; width: 50px">
+            Active
+          </button>
+          <button class="completed" style="height: 30px; width: 80px">
+            Completed
+          </button>
+        </div>
+        <div class="lists"></div>
+        <div class="texts">
+          <div>No task yest.Add one above</div>
+          <div class="power">powered by pinecone academy</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
