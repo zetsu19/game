@@ -45,8 +45,8 @@
 }
 .tomdiv {
   position: absolute;
-  padding-top: 1050px;
-  padding-left: 950px;
+  padding-top: 940px;
+  padding-left: 960px;
   gap: 50px;
 }
 
@@ -58,7 +58,7 @@
 }
 .games {
   position: absolute;
-  padding-top: 600px;
+  padding-top: 500px;
   padding-left: 790px;
 }
 .moles {
@@ -67,4 +67,18 @@
   width: 100px;
   margin-left: 63px;
   background-repeat: no-repeat;
+}
+#st {
+  border: solid 5px black;
+  height: 150px;
+  width: 250px;
+  border-radius: 30px;
+}
+#score {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 33px;
 }
