@@ -1,9 +1,10 @@
 const gameContainer = document.getElementById("game");
 const startButton = document.getElementById("start");
 const restartButton = document.getElementById("restart");
+const stop = document.getElementById("stop");
 let previousHoleId = null;
 let scores = 0;
-let hugtsa = 10;
+let hugtsa = 20;
 let scoreInterval = null;
 let timeInterval = null;
 
@@ -53,9 +54,19 @@ function time() {
     alert(`${count}`);
   }
 }
-function RESTART() {}
+function RESTART() {
+  scores = 0;
+  hugtsa = 20;
+  startButton.addEventListener("click", function () {
+    scoreInterval = setInterval(starter, 1000);
+    timeInterval = setInterval(time, 1000);
+  });
+}
 restartButton.addEventListener("click", RESTART);
-
+stop.addEventListener("click", function stop() {
+  clearInterval(scoreInterval);
+  clearInterval(timeInterval);
+});
 function hide() {
   if (previousHoleId !== null) {
     const umnuhNuh = document.getElementById(previousHoleId);

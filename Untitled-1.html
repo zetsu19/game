@@ -1,6 +1,33 @@
-<div id="st">
-  <div id="score">
-    <div>Score:<span>0</span></div>
-    <div>Time: <span>30 </span>sec</div>
-  </div>
-</div>
+const gameContainer = document.getElementById("game"); const startButton =
+document.getElementById("start"); const restartButton =
+document.getElementById("restart"); let previousHoleId = null; let scores = 0;
+let hugtsa = 60; let scoreInterval = null; let timeInterval = null; function
+togloom() { for (let i = 0; i < 9; i++) { const hole =
+document.createElement("div"); hole.classList.add("hole"); hole.id =
+i.toString(); const mole = document.createElement("div");
+mole.classList.add("moles"); mole.style.display = "none";
+mole.addEventListener("click", function () { console.log("working"); const count
+= document.getElementById("playerScore"); count.innerText =
+Number(count.innerText) + 1; }); hole.appendChild(mole);
+gameContainer.appendChild(hole); } } function starter() { hide(); const
+randomNumber = Math.floor(Math.random() * 9); console.log(randomNumber, "THIS
+HOLE"); const randomHole = document.getElementById(randomNumber);
+console.log(randomHole); const randomMole = randomHole.querySelector(".moles");
+console.log(randomMole); randomMole.style.display = "block"; previousHoleId =
+randomNumber; } function time() { hugtsa = hugtsa - 1; const timer =
+document.getElementById("playerTime"); timer.innerHTML = `${hugtsa} sec`; if
+(hugtsa <= 0) { clearInterval(scoreInterval); clearInterval(timeInterval); const
+lastmole = document.getElementById(previousHoleId);
+lastmole.querySelector(".moles").style.display = "none"; alert("GAME OVER !"); }
+} function RESTART() { } restartButton.addEventListener("click", RESTART);
+function hide() { if (previousHoleId !== null) { const umnuhNuh =
+document.getElementById(previousHoleId); const umnuhSohorNomin =
+umnuhNuh.querySelector(".moles"); umnuhSohorNomin.style.display = "none"; } }
+startButton.addEventListener("click", function () { scoreInterval =
+setInterval(starter, 1000); timeInterval = setInterval(time, 500); });
+window.onload = togloom; clearInterval(scoreInterval);
+clearInterval(timeInterval); const lastmole =
+document.getElementById(previousHoleId);
+lastmole.querySelector(".moles").style.display = "none"; for (let i = 0; i <
+numbers.length; i++) { const word = document.createElement("div");
+word.innerHTML = numbers[i]; nameContainer.appendChild(word); }

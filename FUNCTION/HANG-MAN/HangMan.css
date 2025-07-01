@@ -1,0 +1,33 @@
+#alphabets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  height: 90px;
+  width: 280px;
+  padding-left: 980px;
+}
+#image {
+  background-image: url(./0.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 920px;
+  height: 600px;
+  width: 450px;
+}
+#underscore {
+  font-size: 100px;
+  padding-left: 990px;
+  padding-top: 30px;
+}
+.words {
+  font-size: 30px;
+}
+#FAIL {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: 30px;
+}

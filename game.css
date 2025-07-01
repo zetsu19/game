@@ -19,6 +19,21 @@
   background-position: center;
   background-size: cover;
 }
+
+#game {
+  display: flex;
+  width: 700px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.moles {
+  background-image: url(./mole.png);
+  height: 110px;
+  width: 100px;
+  margin-left: 63px;
+  background-repeat: no-repeat;
+}
 .start {
   height: 50px;
   width: 170px;
@@ -45,28 +60,14 @@
 }
 .tomdiv {
   position: absolute;
-  padding-top: 940px;
-  padding-left: 960px;
+  bottom: 100px;
+  left: 880px;
   gap: 50px;
-}
-
-#game {
-  display: flex;
-  width: 700px;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 .games {
   position: absolute;
-  padding-top: 500px;
-  padding-left: 790px;
-}
-.moles {
-  background-image: url(./mole.png);
-  height: 110px;
-  width: 100px;
-  margin-left: 63px;
-  background-repeat: no-repeat;
+  top: 570px;
+  left: 790px;
 }
 #st {
   border: solid 5px black;
@@ -81,4 +82,16 @@
   align-items: center;
   flex-direction: column;
   padding-top: 33px;
+}
+.stop {
+  height: 50px;
+  width: 170px;
+  font-size: 25px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+#stop:hover {
+  border: 5px solid red;
+  height: 50px;
+  width: 170px;
 }
